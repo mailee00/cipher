@@ -1,0 +1,51 @@
+@use "./partials/colors.scss";
+
+html, body {
+    margin: 0 auto;
+}
+
+.title-text {
+    color: colors.$grey-text;
+    background-color: colors.$orange-bg-text;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0;
+}
+.main-container {
+    background-color: #b3b3b3;
+}
+.w3-title {
+    color: colors.$w3-lightgrey;
+    background-color: colors.$w3-green;
+    padding: 15px;
+    margin: 0;
+}
+.lesson-title {
+    color: colors.$w3-green;
+    background-color: #000000;
+    padding: 15px;
+    margin: 0px 0px 5px 0px;
+}
+.flex-tiles {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px;
+}
+.exercise-tile {
+    background-color: #ffffff;
+    width: 300px;
+    height: 275px;
+    margin: 3px;
+    border: 3px solid black;
+    padding: 5px;
+
+    h4 {
+        margin-top: 0;
+    }
+}
+
+.exercise-subtitle {
+    color: #ffffff;
+    background-color: #646464;
+    padding: 5px;
+}
