@@ -9,132 +9,27 @@
   <body>
     <header>
       <h1 class="title-text">Javascript Practice</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Assignments</a></li>
+          <li><a href="practice.html">Practice</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="main-container">
-      <h2 class="w3-title">W3Schools Exercises</h2>
+      <h2 class="home-title">Module 1: Getting Started</h2>
       <!-- Section 1 -->
-      <h3 class="lesson-title">Introduction Page</h3>
+      <h3 class="assignment-title">1.6 Assignment</h3>
       <div class="flex-tiles">
-        <!-- Exercise-1, Lightbulb -->
+        <!-- 1.6 Assignment -->
         <div class="exercise-tile">
-          <h4 class="exercise-subtitle">1-Lightbulb</h4>
-          <button
-            onclick="document.getElementById('myImage').src='assets/images/pic_bulbon.gif'"
-          >
-            On
-          </button>
-          <img id="myImage" src="assets/images/pic_bulbon.gif" />
-          <button
-            onclick="document.getElementById('myImage').src='assets/images/pic_bulboff.gif'"
-          >
-            Off
-          </button>
-        </div>
-        <!-- Exercise-2, Grow text -->
-        <div class="exercise-tile">
-          <h4 class="exercise-subtitle">2-Text Size</h4>
-          <p id="demo">Supersize Me</p>
-          <button
-            type="button"
-            onclick="document.getElementById('demo').style.fontSize='35px'"
-          >
-            Click
-          </button>
-        </div>
-        <!-- Exercise-3, hide elements -->
-        <div class="exercise-tile">
-          <h4 class="exercise-subtitle">3-Hide Elements</h4>
-          <p id="demo2" style="display: block">Houdini</p>
-          <button
-            type="button"
-            onclick="document.getElementById('demo2').style.display='none'"
-          >
-            Click
-          </button>
-        </div>
-        <!-- Exercise-4, show elements -->
-        <div class="exercise-tile">
-          <h4 class="exercise-subtitle">4-Show Elements</h4>
-          <p id="demo3" style="display: none">Peek-A-Boo</p>
-          <button
-            type="button"
-            onclick="document.getElementById('demo3').style.display='block'"
-          >
-            Click
-          </button>
+          <h4 class="exercise-subtitle">console/document.write</h4>
+          <p>A hidden message is waiting in the console and at the bottom...</p>
         </div>
       </div>
-      <!-- Section 2 -->
-      <h3 class="lesson-title">Where To Page</h3>
-      <div class="flex-tiles">
-        <!-- Exercise-5, internal -->
-        <div class="exercise-tile">
-          <h4 class="exercise-subtitle">5-Script Function (body)</h4>
-          <p id="demo5">What I once was...</p>
-          <button type="button" onclick="function1()">Click</button>
-        </div>
-        <!-- Exercise-6, external -->
-         <div class="exercise-tile">
-            <h4 class="exercise-subtitle">6-External JS File</h4>
-            <p id="demo6">We will, we will...</p>
-            <button type="button" onclick="function2()">Click</button>
-         </div>
-      </div>
-      <!-- Section-3 -->
-       <h3 class="lesson-title">Output Page</h3>
-       <div class="flex-tiles">
-        <!-- Exercise-7, innerhtml -->
-        <div class="exercise-tile">
-            <h4 class="exercise-subtitle">7-HTML element; innerHTML</h4>
-            <p id="demo7"></p>
-        </div>
-          <!-- Exercise-8, documentwrite before -->
-        <div class="exercise-tile">
-            <h4 class="exercise-subtitle">8-HTML output; documentwrite, before load</h4>
-            <p>This one is used <b>BEFORE</b> document has been loaded, see bottom.</p>
-        </div>
-         <!-- Exercise-9, documentwrite after -->
-        <div class="exercise-tile">
-            <h4 class="exercise-subtitle">9-HTML output; documentwrite, after load</h4>
-            <p>This one is used <b>AFTER</b> document has been loaded; it deletes existing html. It is only used for testing.</p>
-            <button type="button" 
-            onclick="document.write('I am connected to exercise 9, post-loaded documentwrite')">Click</button>
-        </div>
-        <!-- Exercise-10, windowalert -->
-        <div class="exercise-tile">
-            <h4 class="exercise-subtitle">10-windowalert</h4>
-            <p>Creates browser window popup.</p>
-            <p>W3schools: You can use an alert box to display data. In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object.</p>
-        </div>
-          <!-- Exercise-11, consolelog -->
-          <div class="exercise-tile">
-            <h4 class="exercise-subtitle">11-browser console; consolelog</h4>
-            <p>Inspect page, go to console</p>
-        </div>
-        <!-- Exercise-12, windowprint -->
-        <div class="exercise-tile">
-            <h4 class="exercise-subtitle">12-print</h4>
-            <p>This calls on the browser to print the current window.</p>
-            <button onclick="window.print()">Print This Page</button>
-        </div>
-    </div>
-    </main>
-    <!-- SCRIPTS -->
-    <!-- Exercise-5 script -->
-    <script>
-      function function1() {
-        document.getElementById("demo5").innerHTML = "I am no longer.";
-      }
-    </script>
-    <!-- Exercise-5 script -->
-    <script src="js/myscript.js"></script>
-    <!-- Exercise-7 script -->
-     <script> document.getElementById("demo7").innerHTML = 50 + 50;</script>
-     <!-- Exercise-8 script -->
-      <script>document.write("I am connected to exercise 8, pre-loaded documentwrite");</script>
-      <!-- Exercise 10 script -->
-       <script>window.alert("I am connected to exercise 10, window alert.");</script>
-       <!-- Exercise-11 script -->
-        <script>console.log("I am connected to exercise 11, helloooo console!")</script>
+      </main>
+      <!-- Scripts -->
+      <script>console.log("What's your favorite thing to work on as a developer?")</script>
+      <script>document.write("Do-re-mi-fa-so-la-ti...do(cument.write?)")</script>
   </body>
 </html>

@@ -1,51 +1,92 @@
 @use "./partials/colors.scss";
+@use "./partials/typography.scss";
+html,
+body {
+  margin: 0 auto;
+}
 
-html, body {
-    margin: 0 auto;
+body {
+    font-family: typography.$body-font;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: colors.$grey-text;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  li {
+    a {
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      background-color: colors.$grey-text;
+      padding: 11px;
+      margin: 10px;
+    }
+  }
+
+  li a:hover {
+    background-color: #000000;
+  }
 }
 
 .title-text {
-    color: colors.$grey-text;
-    background-color: colors.$orange-bg-text;
-    text-align: center;
-    padding: 10px 10px;
-    margin: 0;
+  color: colors.$grey-text;
+  background-color: colors.$orange-bg-text;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0;
 }
+
 .main-container {
-    background-color: #b3b3b3;
+  background-color: #b3b3b3;
 }
-.w3-title {
-    color: colors.$w3-lightgrey;
-    background-color: colors.$w3-green;
-    padding: 15px;
-    margin: 0;
+
+.home-title {
+background-color: colors.$liteorange-bg-text;
+padding: 15px;
+margin: 0;
 }
-.lesson-title {
-    color: colors.$w3-green;
-    background-color: #000000;
+.assignment-title {
+    color: colors.$liteorange-bg-text;
+    background-color: colors.$grey-text;
     padding: 15px;
     margin: 0px 0px 5px 0px;
 }
+.w3-title {
+  color: colors.$w3-lightgrey;
+  background-color: colors.$w3-green;
+  padding: 15px;
+  margin: 0;
+}
+.lesson-title {
+  color: colors.$w3-green;
+  background-color: #000000;
+  padding: 15px;
+  margin: 0px 0px 5px 0px;
+}
 .flex-tiles {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 15px;
 }
 .exercise-tile {
-    background-color: #ffffff;
-    width: 300px;
-    height: 275px;
-    margin: 3px;
-    border: 3px solid black;
-    padding: 5px;
+  background-color: #ffffff;
+  width: 300px;
+  height: 275px;
+  margin: 3px;
+  border: 3px solid black;
+  padding: 10px;
 
-    h4 {
-        margin-top: 0;
-    }
+  h4 {
+    margin-top: 0;
+  }
 }
 
 .exercise-subtitle {
-    color: #ffffff;
-    background-color: #646464;
-    padding: 5px;
+  color: #ffffff;
+  background-color: #646464;
+  padding: 5px;
 }
