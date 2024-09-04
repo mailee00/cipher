@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Javascript</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="page-header">Javascript Practice</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="archive.html">Archive</a></li>
+          <li><a href="practice.html">Practice</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h2 class="head-green">Module 1 Playground</h2>
+      <!-- Section 1 -->
+      <h3 class="lesson-green">Introduction Lesson</h3>
+      <div class="flex-tiles">
+        <!-- Exercise-1, Lightbulb -->
+        <div class="exer">
+          <h4 class="exer-name">1-Lightbulb</h4>
+          <button
+            onclick="document.getElementById('myImage').src='assets/images/pic_bulbon.gif'"
+          >
+            On
+          </button>
+          <img id="myImage" src="assets/images/pic_bulbon.gif" />
+          <button
+            onclick="document.getElementById('myImage').src='assets/images/pic_bulboff.gif'"
+          >
+            Off
+          </button>
+        </div>
+        <!-- Exercise-2, Grow text -->
+        <div class="exer">
+          <h4 class="exer-name">2-Text Size</h4>
+          <p id="demo">Supersize Me</p>
+          <button
+            type="button"
+            onclick="document.getElementById('demo').style.fontSize='35px'"
+          >
+            Click
+          </button>
+        </div>
+        <!-- Exercise-3, hide elements -->
+        <div class="exer">
+          <h4 class="exer-name">3-Hide Elements</h4>
+          <p id="demo2" style="display: block">Houdini</p>
+          <button
+            type="button"
+            onclick="document.getElementById('demo2').style.display='none'"
+          >
+            Click
+          </button>
+        </div>
+        <!-- Exercise-4, show elements -->
+        <div class="exer">
+          <h4 class="exer-name">4-Show Elements</h4>
+          <p id="demo3" style="display: none">Peek-A-Boo</p>
+          <button
+            type="button"
+            onclick="document.getElementById('demo3').style.display='block'"
+          >
+            Click
+          </button>
+        </div>
+      </div>
+      <!-- Section 2 -->
+      <h3 class="lesson-green">Where To Lesson</h3>
+      <div class="flex-tiles">
+        <!-- Exercise-5, internal -->
+        <div class="exer">
+          <h4 class="exer-name">5-Script Function (body)</h4>
+          <p id="demo5">What I once was...</p>
+          <button type="button" onclick="function1()">Click</button>
+        </div>
+        <!-- Exercise-6, external -->
+         <div class="exer">
+            <h4 class="exer-name">6-External JS File</h4>
+            <p id="demo6">We will, we will...</p>
+            <button type="button" onclick="function2()">Click</button>
+         </div>
+      </div>
+      <!-- Section-3 -->
+       <h3 class="lesson-title">Output Lesson</h3>
+       <div class="flex-tiles">
+        <!-- Exercise-7, innerhtml -->
+        <div class="exer">
+            <h4 class="exer-name">7-HTML element; innerHTML</h4>
+            <p id="demo7"></p>
+        </div>
+          <!-- Exercise-8, documentwrite before -->
+        <div class="exer">
+            <h4 class="exer-name">8-HTML output; documentwrite, before load</h4>
+            <p>This one is used <b>BEFORE</b> document has been loaded, see bottom.</p>
+        </div>
+         <!-- Exercise-9, documentwrite after -->
+        <div class="exer">
+            <h4 class="exer-name">9-HTML output; documentwrite, after load</h4>
+            <p>This one is used <b>AFTER</b> document has been loaded; it deletes existing html. It is only used for testing.</p>
+            <button type="button" 
+            onclick="document.write('I am connected to exercise 9, post-loaded documentwrite')">Click</button>
+        </div>
+        <!-- Exercise-10, windowalert -->
+        <div class="exer">
+            <h4 class="exer-name">10-windowalert</h4>
+            <p>Creates browser window popup.</p>
+            <p>W3schools: You can use an alert box to display data. In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object.</p>
+        </div>
+          <!-- Exercise-11, consolelog -->
+          <div class="exer">
+            <h4 class="exer-name">11-browser console; consolelog</h4>
+            <p>Inspect page, go to console</p>
+        </div>
+        <!-- Exercise-12, windowprint -->
+        <div class="exer">
+            <h4 class="exer-name">12-print</h4>
+            <p>This calls on the browser to print the current window.</p>
+            <button onclick="window.print()">Print This Page</button>
+        </div>
+    </div>
+    </main>
+    <!-- SCRIPTS -->
+    <!-- Exercise-5 script -->
+    <script>
+      function function1() {
+        document.getElementById("demo5").innerHTML = "I am no longer.";
+      }
+    </script>
+    <!-- Exercise-5 script -->
+    <script src="js/play-mod-one.js"></script>
+    <!-- Exercise-7 script -->
+     <script> document.getElementById("demo7").innerHTML = 50 + 50;</script>
+     <!-- Exercise-8 script -->
+      <script>document.write("I am connected to exercise 8, pre-loaded documentwrite");</script>
+      <!-- Exercise 10 script -->
+       <script>window.alert("I am connected to exercise 10, window alert.");</script>
+       <!-- Exercise-11 script -->
+        <script>console.log("I am connected to exercise 11, helloooo console!")</script>
+  </body>
+</html>

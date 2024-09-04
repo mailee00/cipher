@@ -6,7 +6,15 @@ body {
 }
 
 body {
-    font-family: typography.$body-font;
+  font-family: typography.$body-font;
+}
+
+.page-header {
+  color: colors.$grey-text;
+  background-color: colors.$orange-bg-text;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0;
 }
 .navbar {
   display: flex;
@@ -32,47 +40,79 @@ body {
   }
 }
 
-.title-text {
-  color: colors.$grey-text;
-  background-color: colors.$orange-bg-text;
+.sub-navbar {
   text-align: center;
-  padding: 10px 10px;
+  background-color: black;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+  li {
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      background-color: black;
+      padding: 10px;
+    }
+  }
+
+  li a:hover {
+    background-color: colors.$grey-text;
+    color: white;
+  }
 }
 
+// PLAYGROUND TILES
 .main-container {
   background-color: #b3b3b3;
 }
-
-.home-title {
-background-color: colors.$liteorange-bg-text;
-padding: 15px;
-margin: 0;
+//----------HEADERS
+.head-orange {
+  background-color: colors.$liteorange-bg-text;
+  padding: 15px;
+  margin: 0;
 }
-.assignment-title {
-    color: colors.$liteorange-bg-text;
-    background-color: colors.$grey-text;
-    padding: 15px;
-    margin: 0px 0px 5px 0px;
+.lesson-orange {
+  color: colors.$liteorange-bg-text;
+  background-color: colors.$grey-text;
+  padding: 15px;
+  margin: 0;
 }
-.w3-title {
+.head-green {
   color: colors.$w3-lightgrey;
   background-color: colors.$w3-green;
   padding: 15px;
   margin: 0;
 }
-.lesson-title {
+.lesson-green {
   color: colors.$w3-green;
   background-color: #000000;
   padding: 15px;
-  margin: 0px 0px 5px 0px;
+  margin: 0;
 }
+
+.head-yellow {
+  background-color: yellow;
+  padding: 15px;
+  margin: 0;
+}
+
+.lesson-yellow {
+  color: yellow;
+  background-color: #000000;
+  padding: 15px;
+  margin: 0;
+}
+
+//CONTENT TILES
 .flex-tiles {
   display: flex;
   flex-flow: row wrap;
   padding: 15px;
 }
-.exercise-tile {
+.exer {
   background-color: #ffffff;
   width: 300px;
   height: 275px;
@@ -85,8 +125,21 @@ margin: 0;
   }
 }
 
-.exercise-subtitle {
+.exer-name {
   color: #ffffff;
   background-color: #646464;
+  padding: 5px;
+}
+
+.divide {
+  color: white;
+  background-color: #646464;
+  margin: 0;
+  padding: 5px;
+}
+
+.note {
+  background-color: #a2a2a2;
+  margin: 0;
   padding: 5px;
 }

@@ -8,6 +8,14 @@ body {
   font-family: "Open sans", sans-serif;
 }
 
+.page-header {
+  color: #313131;
+  background-color: #ffa500;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 0;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -29,43 +37,69 @@ body {
   background-color: #000000;
 }
 
-.title-text {
-  color: #313131;
-  background-color: #ffa500;
+.sub-navbar {
   text-align: center;
-  padding: 10px 10px;
+  background-color: black;
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.sub-navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px;
+}
+.sub-navbar li a:hover {
+  background-color: #313131;
+  color: white;
 }
 
 .main-container {
   background-color: #b3b3b3;
 }
 
-.home-title {
+.head-orange {
   background-color: #ffd689;
   padding: 15px;
   margin: 0;
 }
 
-.assignment-title {
+.lesson-orange {
   color: #ffd689;
   background-color: #313131;
   padding: 15px;
-  margin: 0px 0px 5px 0px;
+  margin: 0;
 }
 
-.w3-title {
+.head-green {
   color: #f1f1f1;
   background-color: #04AA6D;
   padding: 15px;
   margin: 0;
 }
 
-.lesson-title {
+.lesson-green {
   color: #04AA6D;
   background-color: #000000;
   padding: 15px;
-  margin: 0px 0px 5px 0px;
+  margin: 0;
+}
+
+.head-yellow {
+  background-color: yellow;
+  padding: 15px;
+  margin: 0;
+}
+
+.lesson-yellow {
+  color: yellow;
+  background-color: #000000;
+  padding: 15px;
+  margin: 0;
 }
 
 .flex-tiles {
@@ -74,7 +108,7 @@ body {
   padding: 15px;
 }
 
-.exercise-tile {
+.exer {
   background-color: #ffffff;
   width: 300px;
   height: 275px;
@@ -82,12 +116,25 @@ body {
   border: 3px solid black;
   padding: 10px;
 }
-.exercise-tile h4 {
+.exer h4 {
   margin-top: 0;
 }
 
-.exercise-subtitle {
+.exer-name {
   color: #ffffff;
   background-color: #646464;
+  padding: 5px;
+}
+
+.divide {
+  color: white;
+  background-color: #646464;
+  margin: 0;
+  padding: 5px;
+}
+
+.note {
+  background-color: #a2a2a2;
+  margin: 0;
   padding: 5px;
 }/*# sourceMappingURL=main.css.map */
