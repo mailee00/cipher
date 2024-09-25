@@ -40,11 +40,11 @@ const readingMaterial = document.querySelector(".reading-material");
 const lightSelect = document.querySelector(".light-select");
 const darkSelect = document.querySelector(".dark-select");
 
-lightSelect.addEventListener("click", function(){
-    readingMaterial.classList.toggle("perfect-contrast-light");
-    readingMaterial.classList.remove("perfect-contrast-dark");
+lightSelect.addEventListener("click", function () {
+  readingMaterial.classList.toggle("perfect-contrast-light");
+  readingMaterial.classList.remove("perfect-contrast-dark");
 });
-darkSelect.addEventListener("click", function(){
-    readingMaterial.classList.toggle("perfect-contrast-dark");
-    readingMaterial.classList.remove("perfect-contrast-light");
+darkSelect.addEventListener("click", function () {
+  readingMaterial.classList.toggle("perfect-contrast-dark");
+  readingMaterial.classList.remove("perfect-contrast-light");
 });
