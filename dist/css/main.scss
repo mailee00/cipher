@@ -147,3 +147,22 @@ body {
 .workarea {
   padding: 10px;
 }
+
+// 5.4 Assignment
+
+.perfect-contrast-light {
+  background-color: white;
+  color: black;
+}
+
+.perfect-contrast-dark {
+  background-color: black;
+  color: white;
+}
+
+.perfect-sad-text {
+  background-color: dodgerblue;
+  text-align: center;
+  box-shadow: 5px 5px black;
+
+}
