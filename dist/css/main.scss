@@ -66,7 +66,7 @@ body {
 
 // PLAYGROUND TILES
 .main-container {
-  background-color: #b3b3b3;
+  background-color: #d5d5d5;
 }
 //----------HEADERS
 .head-orange {
@@ -133,13 +133,13 @@ body {
 
 .divide {
   color: white;
-  background-color: #646464;
+  background-color: colors.$grey-text;
   margin: 0;
   padding: 5px;
 }
 
 .note {
-  background-color: #868686;
+  background-color: #979797;
   margin: 0;
   padding: 5px;
 }
